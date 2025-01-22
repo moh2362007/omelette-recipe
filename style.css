@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'outfit';
+}
+body {
+    background-color: hsl(30, 54%, 90%);
+}
+section {
+    height: 300vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    height: 90%;
+    background-color: white;
+    width: 45%;
+    margin-top: 40px;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+.container .main {
+    margin-bottom: 20px;
+}
+.container .main img {
+    width: 700px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.container .main h1 {
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.container .main p {
+    line-height: 1.5;
+}
+.container .time {
+    background-color: hsl(30, 54%, 90%);
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.container .time h2 {
+    padding: 10px;
+    color: hsl(332, 51%, 32%);
+}
+.container .time ul {
+    padding: 15px 35px;
+}
+.container .time ul li {
+    margin: 20px 10px;
+}
+.container .time ul li span {
+    font-weight: bold;
+}
+.container .ingredients {
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+.container .ingredients h2 ,.container .instructions h2{
+    padding: 5px 10px;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 10px;
+}
+.container .ingredients ul , .container .instructions ol {
+    padding: 10px;
+}
+.container .ingredients ul li {
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.container .instructions {
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+.container .instructions ul li span {
+    font-weight: bold;
+    
+}
+.container .instructions ol li {
+    margin-bottom: 20px;
+}
+.nutrition {
+    padding: 10px;
+    margin-top: 20px;
+}
+.nutrition h2 {
+    color:hsl(14, 45%, 36%);
+    padding: 10px;
+}
+.nutrition p {
+    padding: 10px;
+}
+.Statistics {
+    padding: 10px;
+    width: 100%;
+}
+.Statistics > div {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 70%;
+}
+.Statistics > div .num {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+@media (max-width: 1130px) {
+    .container {
+        width: 100%;
+    }
+
+}
+@media (max-width: 1700px) {
+    .container .main img {
+        width: 400px;
+        flex-grow: 1;
+    }
+}
+@media (max-width: 1300px) {
+    .container .main img {
+        width: 300px;
+        flex-grow: 1;
+    }
+}
+ul li::marker , ol li::marker {
+    color: hsl(14, 86%, 26%);
+    font-weight: bold;
+}
